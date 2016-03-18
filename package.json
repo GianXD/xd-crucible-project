@@ -10,8 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/GianXD/xd-crucible-project.git"
   },
+  "dependencies": {
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
   "author": "",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/GianXD/xd-crucible-project/issues"
   },
