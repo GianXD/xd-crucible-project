@@ -1,8 +1,14 @@
 var http = require('http');
 
+var userCount = 0;
 http.createServer(function (request, response) {
+    console.log('New connection');
+    userCount++;
+
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Hello World\n');
-}).listen(8080);
+    response.write('Hello!\n');
+    response.write('We have had '+userCount+' visits!\n');
+    response.end();
+}).listen(80);
 
 console.log('Server started');
