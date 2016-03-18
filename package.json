@@ -1,0 +1,19 @@
+{
+  "name": "xd-crucible-project",
+  "version": "1.0.0",
+  "description": "## Introduction + Just testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianXD/xd-crucible-project.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/GianXD/xd-crucible-project/issues"
+  },
+  "homepage": "https://github.com/GianXD/xd-crucible-project#readme"
+}
