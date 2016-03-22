@@ -3,6 +3,12 @@ var express = require('express');
 var app = express();
 var pg = require('pg');
 
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM test_table', function(err, result) {
@@ -15,17 +21,6 @@ app.get('/db', function (request, response) {
   });
 })
 
-var port = process.env.PORT || 8080;
-
-var userCount = 0;
-http.createServer(function (request, response) {
-    console.log('New connection');
-    userCount++;
-
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.write('Hello!\n');
-    response.write('We have had '+userCount+' visits!\n');
-    response.end();
-}).listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
-});
+app.get('', function (request, response) {
+	// Something needs to go here...
+})
