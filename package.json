@@ -11,6 +11,7 @@
     "url": "git+https://github.com/GianXD/xd-crucible-project.git"
   },
   "dependencies": {
+    "pg": "4.x",
     "ejs": "2.3.3",
     "express": "4.13.3"
   },
