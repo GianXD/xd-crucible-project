@@ -21,6 +21,6 @@ app.get('/db', function (request, response) {
   });
 })
 
-app.get('', function (request, response) {
-	// Something needs to go here...
-})
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
